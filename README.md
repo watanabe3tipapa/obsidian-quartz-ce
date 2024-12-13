@@ -32,7 +32,8 @@
 - 他に（Raw HTML pages）を実装できるようになっています。
  [source/raw_html](./source/raw_html) に該当ファイルを置いてください。  
 Example1: https://watanabe3tipapa.github.io/obsidian-quartz-ce/raw-html-test.html  
-Example2: https://watanabe3tipapa.github.io/obsidian-quartz-ce/raw-html-markdown-editor.html
+Example2: https://watanabe3tipapa.github.io/obsidian-quartz-ce/raw-html-markdown-editor.html  
+
 Example3:  coming soon ... 
 
 
