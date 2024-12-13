@@ -1,13 +1,9 @@
 # 📂 obsidian-quartz-ce / GitHub Pages Template
 
 
-### *GitHubページでObsidianノートブックを公開するためのテンプレート*
+### *GitHub Pagesで Obsidianノートブック を公開するためのテンプレート*
 
 
-
-
-
-以下、要修正
 
 
 ## ⚙️ このリポジトリの使い方
@@ -26,8 +22,11 @@
 
 - ローカル環境へのHTML変換は`./source/`で次のコマンドで行います。
 
+初回コマンドは、
+  `cd source && npm install && npx quartz build --serve`
+
+それ以降は必ず`./source`で次のコマンドを実行してください。
   `npx quartz build --serve`  
-  
   
 
 - 他に（Raw HTML pages）を実装できるようになっています。
@@ -44,3 +43,6 @@ Quartzは、コーディングを知らなくても、非常に設定しやす�
 
 
 公開URL: https://watanabe3tipapa.github.io/obsidian-quartz-ce
+
+
+---
