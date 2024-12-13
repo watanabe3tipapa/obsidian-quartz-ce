@@ -33,6 +33,7 @@
  [source/raw_html](./source/raw_html) に該当ファイルを置いてください。  
 Example1: https://watanabe3tipapa.github.io/obsidian-quartz-ce/raw-html-test.html  
 Example2: https://watanabe3tipapa.github.io/obsidian-quartz-ce/raw-html-markdown-editor.html
+Example3:  coming soon ... 
 
 
 
@@ -42,7 +43,7 @@ Quartzは、コーディングを知らなくても、非常に設定しやす�
 必要な設定のほとんどは、quartz.config.tsを編集するか、quartz.layout.tsでレイアウトを変更するだけでできるという点が推しです。
 
 
-公開URL: https://watanabe3tipapa.github.io/obsidian-quartz-ce
+公開URL（RSS配信）: https://watanabe3tipapa.github.io/obsidian-quartz-ce
 
 
 ---
