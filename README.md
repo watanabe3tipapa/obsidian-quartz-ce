@@ -1,5 +1,7 @@
 # 📂 obsidian-quartz-ce / GitHub Pages Template
 
+![License](https://img.shields.io/badge/license-MIT-blue.svg)
+![Version](https://img.shields.io/badge/version-0.1.0-green.svg)
 
 ### *GitHub Pagesで Obsidianノートブック を公開するためのテンプレート*
 
