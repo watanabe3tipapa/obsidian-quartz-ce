@@ -1,1 +1,14 @@
-.trash/*
+# System
+.DS_Store
+Thumbs.db
+
+# Node
+node_modules
+npm-debug.log
+yarn-error.log
+pnpm-debug.log
+
+# Quartz
+.quartz-cache/
+source/quartz/.quartz-cache/
+content/.obsidian

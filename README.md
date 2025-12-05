@@ -20,15 +20,29 @@
 
 - Note（Obsidianまたテキストエディタで編集したマークダウンファイル）は [source/content](./source/content)に置きます。:（基本的に）Obsidianの書庫をここに設定すれば使い勝手が良いです
 
-- HTMLへの変換は [Quartz](https://github.com/jackyzha0/quartz)　が行います。 
+- HTMLへの変換は [Quartz](https://github.com/jackyzha0/quartz) が行います。 
+- `source` ディレクトリが Quartz の本体です。
 
-- ローカル環境へのHTML変換は`./source/`で次のコマンドで行います。
+### 💻 ローカルでの開発（プレビュー）
 
-初回コマンドは、
-  `cd source && npm install && npx quartz build --serve`
+ローカル環境でプレビューを行うには、`source` ディレクトリに移動してコマンドを実行します。
 
-それ以降は必ず`./source`で次のコマンドを実行してください。
-  `npx quartz build --serve`  
+1. **初回セットアップ**: 依存関係をインストールします。
+   ```bash
+   cd source
+   npm install
+   ```
+
+2. **プレビュー起動**: サーバーを立ち上げて変更を確認します。
+   ```bash
+   npx quartz build --serve
+   ```
+   コマンド実行後、ブラウザで `http://localhost:8080` にアクセスしてください。
+
+### 🚀 デプロイ（GitHub Pages）
+
+GitHub Actions が設定されているため、GitHub にプッシュするだけで自動的にビルドとデプロイが行われます。
+`source/content` 内のマークダウンファイルを編集してプッシュしてください。
   
 
 - 他に（Raw HTML pages）を実装できるようになっています。
