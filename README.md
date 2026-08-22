@@ -1,65 +1,69 @@
-# 📂 obsidian-quartz-ce / GitHub Pages Template
+# 📂 obsidian-quartz-ce / GitHub Pages テンプレート
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![Version](https://img.shields.io/badge/version-0.1.0-green.svg)
 
-### *GitHub Pagesで Obsidianノートブック を公開するためのテンプレート*
+GitHub Pages で Obsidianノートブックを公開するためのテンプレートです。HTML 生成は Quartz を利用します。公開ページ（RSS配信）は以下の URL で確認できます。
 
+公開URL: https://watanabe3tipapa.github.io/obsidian-quartz-ce/
 
+---
 
-## ⚙️ このリポジトリの使い方
+## 主な内容
 
-##### 要件（手順）
+- Obsidian（または任意の Markdown）を source/content に置くことで、Quartz を用いて静的サイトとして公開できます。
+- ビルドとデプロイは GitHub Actions を利用可能な設定になっています（Settings > Pages の Build and Deployment で GitHub Actions を選択します）。
+- raw HTML を置けるディレクトリ（source/raw_html）も用意されています。
 
-- このリポジトリをフォークします。（詳細省略）
+## 必要条件（前提）
 
-- フォークしたリポジトリの "Settings" > "Pages" の "Build and Deployment" の事項でGitHub Actionsを選択します。　>> Actionsが動き出します
+- Node.js / npm がインストールされていること（ローカルでのプレビュー時）。
+- GitHub リポジトリをフォークして Pages のビルド方法に GitHub Actions を選ぶこと（Actions が稼働するようにするため）。
 
-- フォークしたリポジトリをデバイスにクローンします。（詳細省略）
+## セットアップ（ローカルでの開発 / プレビュー）
 
-- Note（Obsidianまたテキストエディタで編集したマークダウンファイル）は [source/content](./source/content)に置きます。:（基本的に）Obsidianの書庫をここに設定すれば使い勝手が良いです
+1. フォークしたリポジトリをクローンし、source ディレクトリに移動します。
 
-- HTMLへの変換は [Quartz](https://github.com/jackyzha0/quartz) が行います。 
-- `source` ディレクトリが Quartz の本体です。
-
-### 💻 ローカルでの開発（プレビュー）
-
-ローカル環境でプレビューを行うには、`source` ディレクトリに移動してコマンドを実行します。
-
-1. **初回セットアップ**: 依存関係をインストールします。
    ```bash
    cd source
    npm install
    ```
 
-2. **プレビュー起動**: サーバーを立ち上げて変更を確認します。
+2. ローカルプレビュー用サーバーを起動します。
+
    ```bash
    npx quartz build --serve
    ```
-   コマンド実行後、ブラウザで `http://localhost:8080` にアクセスしてください。
 
-### 🚀 デプロイ（GitHub Pages）
+   コマンド実行後、ブラウザで http://localhost:8080 にアクセスして確認してください。
 
-GitHub Actions が設定されているため、GitHub にプッシュするだけで自動的にビルドとデプロイが行われます。
-`source/content` 内のマークダウンファイルを編集してプッシュしてください。
-  
+## デプロイ（GitHub Pages）
 
-- 他に（Raw HTML pages）を実装できるようになっています。
- [source/raw_html](./source/raw_html) に該当ファイルを置いてください。  
-Example1: https://watanabe3tipapa.github.io/obsidian-quartz-ce/raw-html-test.html  
-Example2: https://watanabe3tipapa.github.io/obsidian-quartz-ce/raw-html-markdown-editor.html  
+- リポジトリ設定で GitHub Actions を有効にしておくと、ソース（source/content 内の Markdown）をコミットしてプッシュするだけで自動的にビルドとデプロイが実行されます。
 
-Example3:  coming soon ... 
+## コンテンツの配置
 
+- Markdown（Obsidian の Vault）: source/content に配置します。Obsidian の書庫をそのままここに設定すると扱いやすい構成です。
+- raw HTML: source/raw_html にファイルを置くことで、直接参照できる HTML ページを追加できます。
 
+例:
+- https://watanabe3tipapa.github.io/obsidian-quartz-ce/raw-html-test.html
+- https://watanabe3tipapa.github.io/obsidian-quartz-ce/raw-html-markdown-editor.html
+- Example3: coming soon ...
 
-#### Quartz の利点
+## Quartz に関して
 
-Quartzは、コーディングを知らなくても、非常に設定しやすいように設計されています。
-必要な設定のほとんどは、quartz.config.tsを編集するか、quartz.layout.tsでレイアウトを変更するだけでできるという点が推しです。
+- HTML への変換は Quartz が行います。
+- 主な設定は quartz.config.ts、レイアウトは quartz.layout.ts を編集することで調整できます。
 
+## ライセンス
 
-公開URL（RSS配信）: https://watanabe3tipapa.github.io/obsidian-quartz-ce
+このリポジトリには LICENSE ファイルが含まれており、README のバッジから MIT ライセンスであることが示されています。
 
+## 開発・保守状態
+
+- リポジトリはアーカイブされていません（archived: false）。
 
 ---
+
+README に記載された事実に基づき構成しています。追加の設定手順やカスタマイズ方法は、リポジトリ内の source ディレクトリや Quartz の公式ドキュメント（README 内記載のリンク）を参照してください。
